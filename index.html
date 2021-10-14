@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<div id="main" class="col-md-9">
+
+		<div id="header" class="col-md-12">
+
+			<div id="logo">cidr/it</div>
+
+		</div>
+
+		<div id="about-it" class="text-center">
+
+			<h1>cidr/it - Free CIDR range visualizer</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus nibh, tincidunt at lectus id, imperdiet
+				dignissim ex. Etiam nunc lacus, fermentum tristique maximus sit amet, viverra ac tellus. Ut varius
+				cursus sem eu malesuada. Suspendisse ultricies id risus non sagittis. In bibendum metus eget iaculis
+				porta.</p>
+		</div>
+
+		<div id="octet-input" class="col-md-12">
+
+			<span class="octet">
+				<input type="text" class="octet" id="octet1" maxlength="3" />
+				<span class="dot">.</span>
+			</span>
+
+			<span class="octet">
+				<input type="text" class="octet" id="octet2" maxlength="3" />
+				<span class="dot">.</span>
+			</span>
+
+			<span class="octet">
+				<input type="text" class="octet" id="octet3" maxlength="3" />
+				<span class="dot">.</span>
+			</span>
+
+			<span class="octet">
+				<input type="text" class="octet" id="octet4" maxlength="3" />
+				<span class="dot">/</span>
+			</span>
+
+			<span class="octet">
+				<input type="text" id="bits" maxlength="2" />
+			</span>
+
+		</div>
+
+		<div id="octet-bits" class="col-md-12">
+
+			<div id="octet1_wrapper" class="col-md-3 align-center">
+				<p>1st Octet</p>
+				<span class="placeholder" id="octet1_placeholder"></span>
+			</div>
+
+			<div id="octet2_wrapper" class="col-md-3 align-center">
+				<p>2nd Octet</p>
+				<span class="placeholder" id="octet2_placeholder"></span>
+			</div>
+
+			<div id="octet3_wrapper" class="col-md-3 align-center">
+				<p>3rd Octet</p>
+				<span class="placeholder" id="octet3_placeholder"></span>
+			</div>
+
+			<div id="octet4_wrapper" class="col-md-3 align-center">
+				<p>4th Octet</p>
+				<span class="placeholder" id="octet4_placeholder"></span>
+			</div>
+
+		</div>
+
+
+		<div id="range-info" class="col-md-12">
+
+			<div class="col-md-3 align-center">
+				<p>First Usable IP:
+					<span class="normal-text" id="first-usable-ip"></span> </p>
+			</div>
+
+			<div class="col-md-3 align-center">
+				<p>Last Usable IP:
+					<span class="normal-text" id="last-usable-ip"></span> </p>
+			</div>
+
+			<div class="col-md-3 align-center">
+				<p>Net Mask:
+					<span class="normal-text" id="net-mask"></span> </p>
+			</div>
+
+			<div class="col-md-3 align-center">
+				<p>Available IPs:
+					<span class="placeholder" id="available-ips"></span> </p>
+			</div>
+
+		</div>
+
+		<div id="warning-regular" class="col-md-12 align-center warning ">Google Cloud Platform networking services uses 4
+			reserved IPs,
+			for that reason ranges equal or greater than 30 will not be accepted on the GCP console.</div>
+
+		<div id="warning-exceed" class="col-md-12 align-center warning">Google Cloud Platform networking services uses 4
+			reserved IPs,
+			for that reason ranges equal or greater than 30 will not be accepted on the GCP console.</div>
+
+		<div id="footer" class="col-md-12 align-center	">Created by Raul Tavares.</div>
+
+
+	</div>
+
+	<!-- lazy load of resources -->
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+</body>
+
+</html>

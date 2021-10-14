@@ -1,0 +1,79 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #f7f7f7;
+}
+
+.align-center {
+    text-align: center;
+}
+
+
+#main {
+    float: none;
+    margin: 0 auto;
+}
+
+#logo {
+    text-align: center;
+}
+
+#octet-input {
+    text-align: center;
+}
+
+#octet-input .octet input {
+    width: 80px;
+    font-size: 2.5em;
+    text-align: center;
+    border: 0px;
+    outline: none;
+    color: #333;
+    font-weight: 600;
+}
+
+#octet1 {
+    /* background: #A0C3FF; */
+    background: #efeeee;
+}
+
+#octet2 {
+    /* background: #ED9D97; */
+    background: #efeeee;
+}
+
+#octet3 {
+    /* background: #FFE168; */
+    background: #efeeee;
+}
+
+#octet4 {
+    /* background: #7BCFA9; */
+    background: #efeeee;
+}
+
+#bits {
+    background: #efeeee;
+}
+
+.dot {
+    font-size: 2.2em;
+    text-align: center;
+    padding: 0.13em;
+    font-weight: bold;
+    color: #333;
+}
+
+#octet-bits { display: none;}
+
+.placeholder ul {
+    padding-inline-start: 0;
+}
+
+.placeholder ul li {
+    border: 1px solid black;
+    display: inline-table;
+    padding: 0.4em 0.6em;
+    margin-left: -1px;
+}
+
+.warning {display: none;}
